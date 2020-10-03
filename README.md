@@ -1,9 +1,6 @@
 ## Badges
-
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/72cceab773124daf9fdc91433df56ebf)](https://app.codacy.com/gh/99002479/LINUX_PROJECT?utm_source=github.com&utm_medium=referral&utm_content=99002479/LINUX_PROJECT&utm_campaign=Badge_Grade)
-
 ![C/C++ CI](https://github.com/99002479/LINUX_PROJECT/workflows/C/C++%20CI/badge.svg)
-
 ![cppcheck-action](https://github.com/99002479/LINUX_PROJECT/workflows/cppcheck-action/badge.svg)
 
 # LINUX MINIPROJECT
