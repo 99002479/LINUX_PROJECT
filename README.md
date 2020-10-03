@@ -28,7 +28,7 @@ The aim of the project is to create a bus tracking system in the bus stand in wh
 
 ##  IMPLEMENTATION:
 
-##  MUTEX:
+### MUTEX:
 1) Goto the bus_mutex folder	-	cd bus_mutex
 2) Run the makefile		-	make
 3) Run the sender object file 	- 	./mutex_send
@@ -36,7 +36,7 @@ The aim of the project is to create a bus tracking system in the bus stand in wh
 5) Run the receiver object file - 	./mutex_receive
 6) O/P will be displayed.
 
-##  SEMAPHORE:
+### SEMAPHORE:
 1) Goto the bus_sem folder	-	cd bus_sem
 2) Run the makefile 		- 	make
 3) Run the sender object file	-> 	./sem_send
