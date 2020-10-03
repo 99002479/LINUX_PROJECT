@@ -3,17 +3,49 @@
 
 ![cppcheck-action](https://github.com/99002479/LINUX_PROJECT/workflows/cppcheck-action/badge.svg)
 
-# Linux-MiniProject
-Realising a message queue, and implementing semaphore and mutex with it. The aim of the project was to create a Cash-Deposit-Machine (CDM) for a recurring deposit at regular intervals, for a fixed amount which is input by the user the first time. During the account setup, a minimum balance of Rs. 1000 is expected, which adds to the deposits.
-We are using a structure as a data block holding the A/C no. and the amount to be deposited. This object is input through the send.c and reaches the reci.c through IPC. This IPC is used in Mutex and Semaphore methods.
 
-## Mutex with Message Queue : Refer to reci.c and send.c
-*  pthread_mutex_lock(&lock); is used for locking.
-*  pthread_mutex_unlock(&lock); is used for unlocking.
-*  pthread_mutex_destroy(&lock); is used for destroying.
+#LINUX MINIPROJECT:
 
-## Semaphore with Message Queue : Refer to Semaphore Method/reci.c and send.c
-*  sem_wait(&sem) for lock/wait.
-*  sem_post(&sem) for releasing the lock.
-*  sem_destroy(&sem) for destroying.
+The aim of the project is to create a bus tracking system in the bus stand in which the input of how many buses coming inside the bus stand at a particular time frame (1 hour) is given and send to the receiver. We are using a structure as a data type which holds the message type and no.of buses. This object is input through the mutex_send.c/sem_send.c and reaches the mutex_receive.c/sem_receive.c through IPC. This IPC is used in Mutex and Semaphore methods and the objects gets locked and unlocked during the critical section of the execution.
+
+
+##Mutex with Message Queue : Refer to mutex_send.c and mutex_receive.c
+
+    pthread_mutex_lock(&lock); is used for locking.
+    pthread_mutex_unlock(&lock); is used for unlocking.
+    pthread_mutex_destroy(&lock); is used for destroying.
+    
+
+##Semaphore with Message Queue : Refer to sem_send.c and sem_receive.c
+
+    sem_wait(&s) for lock/wait.
+    sem_post(&s) for releasing the lock.
+    sem_destroy(&s) for destroying.
+
+
+**********************************************************************************************************************************************************************
+
+
+##IMPLEMENTATION:
+
+##MUTEX:
+1) Goto the bus_mutex folder	-	cd bus_mutex
+2) Run the makefile		-	make
+3) Run the sender object file 	- 	./mutex_send
+4) Give 5 inputs.
+5) Run the receiver object file - 	./mutex_receive
+6) O/P will be displayed.
+
+##SEMAPHORE:
+1) Goto the bus_sem folder	-	cd bus_sem
+2) Run the makefile 		- 	make
+3) Run the sender object file	-> 	./sem_send
+4) Give 5 inputs
+5) Run the receiver object file -> 	./sem_receive
+6) O/P will be displayed.
+
+
+**********************************************************************************************************************************************************************
+
+
 
