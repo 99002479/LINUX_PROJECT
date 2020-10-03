@@ -3,11 +3,9 @@
 
 ![cppcheck-action](https://github.com/99002479/LINUX_PROJECT/workflows/cppcheck-action/badge.svg)
 
-
 # LINUX MINIPROJECT
 
 The aim of the project is to create a bus tracking system in the bus stand in which the input of how many buses coming inside the bus stand at a particular time frame (1 hour) is given and send to the receiver. We are using a structure as a data type which holds the message type and no.of buses. This object is input through the mutex_send.c/sem_send.c and reaches the mutex_receive.c/sem_receive.c through IPC. This IPC is used in Mutex and Semaphore methods and the objects gets locked and unlocked during the critical section of the execution.
-
 
 ## Mutex with Message Queue : Refer to mutex_send.c and mutex_receive.c
 
@@ -15,17 +13,13 @@ The aim of the project is to create a bus tracking system in the bus stand in wh
     pthread_mutex_unlock(&lock); is used for unlocking.
     pthread_mutex_destroy(&lock); is used for destroying.
     
-
 ## Semaphore with Message Queue : Refer to sem_send.c and sem_receive.c
 
     sem_wait(&s) for lock/wait.
     sem_post(&s) for releasing the lock.
     sem_destroy(&s) for destroying.
 
-
 **********************************************************************************************************************************************************************
-
-
 ## IMPLEMENTATION
 
 ### MUTEX
@@ -44,8 +38,4 @@ The aim of the project is to create a bus tracking system in the bus stand in wh
 5) Run the receiver object file -> 	./sem_receive
 6) O/P will be displayed.
 
-
 **********************************************************************************************************************************************************************
-
-
-
